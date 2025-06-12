@@ -68,7 +68,7 @@ curl https://paddle-org.bj.bcebos.com/paddlescience/datasets/PhyLSTM/data_boucwe
 ├── PhyLSTM3_w_Graph.py
 ├── README.md
 ├──output
-│		├──训练输出、checkpoint保存、可视化结果 
+│   ├──训练输出、checkpoint保存、可视化结果 
 ├── conf
 │   ├── phylstm2.yaml
 │   ├── phylstm3.yaml
