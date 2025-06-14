@@ -275,9 +275,9 @@ def train(cfg: DictConfig):
     pred_pred_g = pred_pred["g_pred"].numpy()
 
     # 生成时间轴（保持不变）
-    time_train = np.arange(train_true_y.shape[1]) * dt
-    time_val = np.arange(val_true_y.shape[1]) * dt
-    time_pred = np.arange(pred_true_y.shape[1]) * dt
+    time_train = np.arange(train_true_y.shape[1]) * dt * n1
+    time_val = np.arange(val_true_y.shape[1]) * dt * n1
+    time_pred = np.arange(pred_true_y.shape[1]) * dt * n1
 
     functions.plot_all_results(cfg, 'train', train_true_y, train_pred_y, train_true_yt, train_pred_yt, train_true_g, train_pred_g, time_train)
     functions.plot_all_results(cfg, 'val', val_true_y, val_pred_y, val_true_yt, val_pred_yt, val_true_g, val_pred_g, time_val)
